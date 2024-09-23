@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replicated Table Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            border: 1px solid blue;
+        }
+
+        th, td {
+            border: 1px solid blue;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Adjusting header sections */
+        th {
+            background-color: white;
+            font-weight: bold;
+        }
+
+        /* First main header row */
+        .main-header th {
+            font-size: 14px;
+            padding: 8px;
+        }
+
+        /* Sub-header row */
+        .sub-header th {
+            font-size: 12px;
+            padding: 6px;
+        }
+
+        /* Month column width adjustment */
+        .month-col {
+            width: 3%;
+        }
+
+        /* Ellipsis styling - placed in the options column */
+        .ellipsis {
+            font-size: 16px;
+            font-weight: bold;
+            display: block;
+        }
+
+        /* Option column styling */
+        .options {
+            width: 5%;
+        }
+
+        /* Larger column adjustments */
+        .activity-col {
+            width: 10%;
+        }
+
+        .leader-col {
+            width: 15%;
+        }
+
+        .participants-col, .frequency-col, .scope-col {
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+
+          <tr>
+            <th colspan="1">Contract</th>
+            <th colspan="4">Project Site Audit</th>
+            <th colspan="13">Audit, Meeting/Drill Plans</th>
+        </tr>
+            <!-- First header row -->
+            <tr class="main-header">
+                <th rowspan="2" class="activity-col">Activity</th>
+                <th rowspan="2" class="leader-col">Responsible Person (Leader)</th>
+                <th rowspan="2" class="participants-col">Participants</th>
+                <th rowspan="2" class="frequency-col">Frequency</th>
+                <th rowspan="2" class="scope-col">Scope</th>
+                <th colspan="12">Timing</th>
+                <th rowspan="1" class="options">Options</th>
+            </tr>
+            <!-- Second header row (sub-header) -->
+            <tr class="sub-header">
+                <th class="month-col">J</th>
+                <th class="month-col">F</th>
+                <th class="month-col">M</th>
+                <th class="month-col">A</th>
+                <th class="month-col">M</th>
+                <th class="month-col">J</th>
+                <th class="month-col">J</th>
+                <th class="month-col">A</th>
+                <th class="month-col">S</th>
+                <th class="month-col">O</th>
+                <th class="month-col">N</th>
+                <th class="month-col">D</th>
+                <th class="month-col">...</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example row data -->
+            <tr>
+                <td>Audit 1</td>
+                <td>John Doe</td>
+                <td>Team A</td>
+                <td>Monthly</td>
+                <td>Site 1</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td></td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td></td>
+                <td></td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td><span class="ellipsis">...</span></td>
+            </tr>
+            <tr>
+                <td>Audit 1</td>
+                <td>John Doe</td>
+                <td>Team A</td>
+                <td>Monthly</td>
+                <td>Site 1</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td></td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td></td>
+                <td></td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td><span class="ellipsis">...</span></td>
+            </tr>
+            <tr>
+                <td>Audit 1</td>
+                <td>John Doe</td>
+                <td>Team A</td>
+                <td>Monthly</td>
+                <td>Site 1</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td></td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td></td>
+                <td></td>
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td><span class="ellipsis">...</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
